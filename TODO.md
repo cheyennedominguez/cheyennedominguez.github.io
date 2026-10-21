@@ -19,11 +19,12 @@
 - The user approved making the repository public and publishing the site. The source is at https://github.com/cheyennedominguez/cheyennedominguez.github.io and the site is live at https://cheyennedominguez.github.io.
 - A profile photo is optional; the current design uses initials.
 
-## Open — Standalone LinkedIn project preview image
-- Do not add thumbnail artwork to the website. Remove the three newly generated illustrative project-card images from the site, restore the preceding portfolio design, and keep the authentic redacted email/calendar screenshot pairs.
-- Create a separate PNG preview image of the actual website for the user to upload as the thumbnail on their LinkedIn Project. Use a landscape 1200×627 canvas, capture the real portfolio rather than inventing a mockup, save the file outside the website source, and provide it to the user.
-- After restoring the source, build and verify it, push the correction to Manus `origin/main` and GitHub `main`, and run the existing GitHub Pages workflow so the live site no longer contains the illustrative artwork.
+## Done — Standalone LinkedIn project preview image
+- Do not add the preview or generated illustrative card artwork to the website. The user wanted a PNG preview image to upload separately to the LinkedIn Project, not new project-card images on the portfolio.
+- Create a separate 1200×627 PNG screenshot of the actual website homepage, outside the website source. The screenshot is of the real page, not generated artwork, and is delivered separately rather than added to the public repository.
+- Remove the three illustrative project-card images from the website source, retain the authentic redacted email/calendar screenshots, and redeploy the restored version.
 
 ## Verification evidence
-- The project passed `pnpm check` and `pnpm build:static` after the thumbnail-art update; the three WebP images loaded in the preview and the desktop/mobile layouts were reviewed.
-- The GitHub Pages workflow run for commit `3efa723` completed successfully, so the illustrative artwork may currently be on the public site until the restoration deploy completes.
+- `pnpm check` and `pnpm build:static` passed after restoring the prior portfolio source. The GitHub Pages restoration run `39573631644` completed successfully for commit `e48e261`.
+- The live homepage returned HTTP 200 and no longer references the generated card artwork. The route manifest and all four authentic redacted screenshots returned HTTP 200.
+- The standalone file is a valid PNG at 1200×627 pixels and 179 KB, ready to upload to LinkedIn.
