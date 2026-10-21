@@ -21,15 +21,16 @@
 ## Done — Contact and external profiles
 - Provide an accessible contact section with direct links to cheyennemaegan@gmail.com, LinkedIn (https://www.linkedin.com/in/yen-dominguez), and GitHub (https://github.com/cheyennedominguez); make email and LinkedIn especially easy to reach. Do not add a contact form.
 
-## Open — GitHub transfer and user-site setup
-- Create the personal-site repository `cheyennedominguez.github.io` and transfer the current site source to it without replacing the Manus `origin` remote.
-- Include the four user-approved redacted project screenshots in the repository and use repository-local asset paths instead of Manus-only `/manus-storage/` paths, so both the Manus Preview and GitHub Pages can load them.
-- Replace the generic starter README with concise local build and GitHub Pages instructions. Prepare a GitHub Actions static build/deploy workflow for `https://cheyennedominguez.github.io` using `pnpm build:static` and `dist/public`.
-- Keep the GitHub repository private unless/until the user confirms a public-repository visibility change if required by their GitHub plan. Do not expose the repository source or publish the Pages site before that confirmation.
-- Tell the user which image assets are already included and list any optional file they may add, such as a profile portrait; the current design uses initials and does not require a profile photo.
+## Open — GitHub Pages publication and visibility approval
+- The private `cheyennedominguez/cheyennedominguez.github.io` repository now exists, and the `github` remote is separate from Manus `origin`. Transfer the current site source and four redacted image files there.
+- Keep the repository private until Cheyenne approves a visibility change. GitHub Free requires a public repository for Pages. Do not switch visibility or publish the public site without that approval.
+- The site source uses repo-local paths in `/images/`; the four screenshot PNGs are under `client/public/images/` and build unchanged into `dist/public/images/`.
+- The README documents the pnpm build and the repository’s Pages setup. `.github/workflows/pages.yml` is a manual-only workflow that builds `dist/public/` and deploys it after Pages is enabled in repository settings.
+- After public-repository approval, enable GitHub Pages using GitHub Actions and make future main-branch updates deploy automatically. Confirm the live URL `https://cheyennedominguez.github.io` only after a successful workflow run.
+- The current visual identity uses the “CD” initials mark; a portrait is optional. Tell Cheyenne which screenshots are already included and list any optional portrait asset.
 
 ## Verification evidence
-- `pnpm check` and `pnpm build:static` passed after adding the image galleries.
+- `pnpm check` and `pnpm build:static` passed after switching screenshots to local repository files. All four PNGs were served over the preview, copied unchanged to `dist/public/images/`, and referenced through `/images/` paths rather than `/manus-storage/`.
 - Desktop (1280×900) and phone (390×844) full-page screenshots were reviewed; both image pairs render in the correct project sections, use clear before/after captions, and stack cleanly on mobile.
-- The live preview and built route manifest match the declared `/` route. The four image elements currently use stable project-storage paths; these remain to be switched to local repository paths for GitHub Pages.
-- The brown palette and brown monogram/share metadata were retained. The Manus-hosted site remains unpublished; the user has now requested a GitHub Pages user site, subject to the repository-visibility gate above.
+- The live preview and built route manifest match the declared `/` route. The project working tree was clean after the previous checkpoint before the latest README/workflow transfer edits.
+- The brown palette and brown monogram/share metadata were retained. The Manus-hosted site remains unpublished. The GitHub source repository is private, and the user has not yet approved public visibility or deployment.

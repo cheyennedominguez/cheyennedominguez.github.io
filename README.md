@@ -23,4 +23,4 @@ The design currently uses a “CD” initials mark. A profile picture is optiona
 
 ## GitHub Pages
 
-The account-level Pages repository must be named `cheyennedominguez.github.io`. A GitHub Actions workflow will build the site and deploy the `dist/public/` output after Pages eligibility and repository visibility are confirmed. The site itself will be public when published.
+The account-level Pages repository must be named `cheyennedominguez.github.io`. The included workflow builds the static site and deploys `dist/public/` when manually run from GitHub Actions. Before using it, enable Pages with GitHub Actions under **Settings → Pages** and ensure the repository is eligible for Pages. The source repository is currently private; do not change its visibility without Cheyenne’s approval. The portfolio itself is intended to be public when published.
