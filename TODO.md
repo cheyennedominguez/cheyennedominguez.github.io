@@ -19,13 +19,11 @@
 - The user approved making the repository public and publishing the site. The source is at https://github.com/cheyennedominguez/cheyennedominguez.github.io and the site is live at https://cheyennedominguez.github.io.
 - A profile photo is optional; the current design uses initials.
 
-## Open — Project-card thumbnails
-- Create one matching thumbnail for each self-directed project card: email inbox organization, calendar management, and spreadsheet follow-up, using the portfolio’s warm-brown/neutral style.
-- Make the artwork illustrative rather than depicting fake app screenshots or replacing real work evidence. Keep the redacted before/after images as the authentic samples. Add each thumbnail to its matching card with responsive sizing and meaningful accessibility text.
-- Build, check, push the updated source to both Manus `origin/main` and GitHub `main`, and run the GitHub Pages workflow so the published site includes the new thumbnails.
+## Open — Standalone LinkedIn project preview image
+- Do not add thumbnail artwork to the website. Remove the three newly generated illustrative project-card images from the site, restore the preceding portfolio design, and keep the authentic redacted email/calendar screenshot pairs.
+- Create a separate PNG preview image of the actual website for the user to upload as the thumbnail on their LinkedIn Project. Use a landscape 1200×627 canvas, capture the real portfolio rather than inventing a mockup, save the file outside the website source, and provide it to the user.
+- After restoring the source, build and verify it, push the correction to Manus `origin/main` and GitHub `main`, and run the existing GitHub Pages workflow so the live site no longer contains the illustrative artwork.
 
 ## Verification evidence
-- `pnpm check` and `pnpm build:static` passed after the repository-local screenshot migration. All four screenshots are copied unchanged into `dist/public/images/` and referenced through `/images/` paths.
-- The public site returned HTTP 200 for `/`, `/manus-routes.json`, and all four screenshot images. The route manifest declares `/`.
-- Desktop and mobile full-page screenshots were reviewed; before/after samples are in their matching project sections and stack on mobile.
-- Commit `c988ba4` is on Manus `origin/main` and GitHub `main`. GitHub Actions run `39563640574` completed successfully; the public site is live.
+- The project passed `pnpm check` and `pnpm build:static` after the thumbnail-art update; the three WebP images loaded in the preview and the desktop/mobile layouts were reviewed.
+- The GitHub Pages workflow run for commit `3efa723` completed successfully, so the illustrative artwork may currently be on the public site until the restoration deploy completes.
