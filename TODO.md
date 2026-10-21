@@ -2,7 +2,7 @@
 
 ## Done — Public portfolio layout, identity, and access
 - Create a public, responsive, accessible portfolio for Cheyenne Dominguez, using the brewed-ops portfolio template as a visual and structural reference while replacing its developer-focused content with an honest administrative-support narrative.
-- Use a clean, warm, soft-neutral design, a simple “CD” initials mark instead of a profile photo, and clear language that distinguishes contract/project-based remote work, hospitality training, and self-directed practice projects.
+- Follow the brewed-ops reference strictly for visual style and motion patterns, adapting its desktop rail, bento cards, mobile navigation, and restrained spring/reveal transitions to Cheyenne’s content. Change the current green palette to blue while retaining warm neutral backgrounds and a simple “CD” initials mark. Keep contract/project-based work, hospitality training, and self-directed practice projects clearly distinct.
 - Include a hero section with the headline “Remote Administrative Assistant,” a concise honest introduction, a simple CD initials mark, and prominent email and LinkedIn contact links.
 - Present skills and focus areas prioritizing data entry, administrative support, and blog/content support without inventing credentials, outcomes, dates, or availability.
 - Implement responsive, accessible front-end behavior with semantic structure, keyboard-friendly navigation, readable contrast, and layouts optimized from mobile through desktop. The site needs no backend or database.
@@ -20,7 +20,11 @@
 - Provide an accessible contact section with direct links to cheyennemaegan@gmail.com, LinkedIn (https://www.linkedin.com/in/yen-dominguez), and GitHub (https://github.com/cheyennedominguez); make email and LinkedIn especially easy to reach. Do not add a contact form.
 
 ## Verification evidence
-- `pnpm check` passed.
+- `pnpm check` passed after the reference-style and mobile interaction changes.
 - `pnpm build:static` passed and emitted the static site in `dist/public`.
 - The live preview returned HTTP 200 for `/`, `/manus-routes.json`, and `/favicon.svg`; the route manifest declares `/`.
-- The initial HTML contains the portfolio content and contact links, with no remaining starter placeholders.
+- Desktop and mobile screenshots were reviewed; the desktop uses the fixed profile rail, one-line hero, horizontal tools strip, blue bento cards, and rounded outer panel, while mobile uses the compact profile header, stacked cards, and floating bottom tabs.
+- Anchor references are unique and valid; contact links and supplied experience/project figures are present. No green-toned accent colors or developer-template placeholders remain.
+
+## Open — Before-and-after project photos
+- When Cheyenne shares the before-and-after photos for the email-management and calendar-management self-directed projects, add those actual supplied images to the portfolio with clear before/after labels. Do not fabricate or substitute images.
