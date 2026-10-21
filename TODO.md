@@ -12,19 +12,17 @@
 - Include a separate remote/project-based Blog Uploading & Website Content Support entry with dates omitted, describing WordPress and DealerOn uploads, file organization, material checks, and inconsistency flagging without linking or identifying client material.
 - Include education and hospitality training, keeping the 600-hour Front Office hotel internship within the Bachelor’s degree in Hospitality Management separate from paid work. Include support during a high-volume checkout period of approximately 300 guests, check-ins, and guest concerns.
 
-## Done — Practice portfolio projects
+## Done — Practice portfolio projects and images
 - Include a portfolio projects section clearly labeled as self-directed practice rather than paid client work, featuring Gmail inbox organization, calendar management for a property manager, and spreadsheet follow-up tracking.
 - Present the supplied email-management project figures—2,677 unread emails and 2,738 inbox emails reduced to zero, with 19 color-coded labels—and explicitly identify the work as self-directed practice.
+- Use the four real screenshots from the supplied Drive archive for the email-management and calendar-management self-directed projects, with clear before/after labels and a way to view each full-size image.
+- Redact sender, subject, and snippet text in the email-before screenshot; redact the account-activity/location footer in the email-after screenshot; and redact event details, both calendar time axes, and time-zone sidebar information in the calendar screenshots. Keep the application interface, inbox counts, event blocks, and before/after structure visible. These redactions were made with the user’s approval.
 
 ## Done — Contact and external profiles
 - Provide an accessible contact section with direct links to cheyennemaegan@gmail.com, LinkedIn (https://www.linkedin.com/in/yen-dominguez), and GitHub (https://github.com/cheyennedominguez); make email and LinkedIn especially easy to reach. Do not add a contact form.
 
-## Open — Add the shared before-and-after images
-- Use the four real screenshots in the supplied Drive archive for the email-management and calendar-management self-directed projects, with clear before/after labels.
-- The archive has been retrieved and the image mapping confirmed, but before displaying it on the public portfolio, resolve whether visible email sender/subject excerpts, calendar event labels, and Philippines/Los Angeles time-zone labels should be redacted or removed. Do not make these details public without the user’s choice.
-
 ## Verification evidence
-- The current brown-theme source passed `pnpm check` and `pnpm build:static`.
-- Desktop (1280×720) and mobile (390×844) screenshots were reviewed; the reference-inspired rail, bento cards, brown accents, stacked mobile cards, and floating mobile navigation render as intended.
-- The live preview returned HTTP 200 for `/` and `/manus-routes.json`; the manifest is valid JSON and declares `/`.
-- CSS contains no remaining blue token names or color references, and no invalid RGB/RGBA argument counts. Browser theme-color and OG/Twitter images use the warm neutral/brown mark.
+- `pnpm check` and `pnpm build:static` passed after adding the image galleries.
+- Desktop (1280×900) and phone (390×844) full-page screenshots were reviewed; both image pairs render in the correct project sections, use clear before/after captions, and stack cleanly on mobile.
+- The live preview previously returned HTTP 200 for `/` and `/manus-routes.json`; the manifest is valid JSON and declares `/`. The image elements use the returned stable `/manus-storage/` project paths.
+- The brown palette and brown monogram/share metadata were retained. The site remains unpublished, as requested earlier.
