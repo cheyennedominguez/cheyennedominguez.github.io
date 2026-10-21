@@ -1,38 +1,31 @@
 # TODO
 
-## Done — Public portfolio layout, identity, and access
-- Create a public-ready, responsive, accessible portfolio for Cheyenne Dominguez, using the brewed-ops portfolio template as a visual and structural reference while replacing its developer-focused content with an honest administrative-support narrative.
-- Follow the brewed-ops reference strictly for visual style and motion patterns, adapting its desktop rail, bento cards, mobile navigation, and restrained spring/reveal transitions to Cheyenne’s content. Change the color accents to brown while retaining warm neutral backgrounds and a simple “CD” initials mark. Keep contract/project-based work, hospitality training, and self-directed practice projects clearly distinct.
-- Include a hero section with the headline “Remote Administrative Assistant,” a concise honest introduction, a simple CD initials mark, and prominent email and LinkedIn contact links.
-- Present skills and focus areas prioritizing data entry, administrative support, and blog/content support without inventing credentials, outcomes, dates, or availability.
-- Implement responsive, accessible front-end behavior with semantic structure, keyboard-friendly navigation, readable contrast, and layouts optimized from mobile through desktop. The site needs no backend or database.
+## Done — Portfolio content and visual system
+- Create a responsive, accessible portfolio for Cheyenne Dominguez, using the brewed-ops portfolio template as the style and motion reference while replacing developer-focused content with an honest administrative-support narrative.
+- Adapt the template’s desktop rail, bento layout, mobile navigation, and restrained spring/reveal transitions to Cheyenne’s profile. Use warm neutrals and brown accents with a “CD” initials mark; keep contract/project-based work, hospitality training, and self-directed practice distinct.
+- Include the “Remote Administrative Assistant” headline, an honest introduction, data-entry and admin support, blog/content support, and accessible email/LinkedIn contact links.
+- Include GitHub and education links; do not invent credentials, dates, outcomes, or availability. Keep location/time zone and academic distinction off the page. The site needs no contact form, backend, or database.
 
-## Done — Remote experience and education
-- Include the seven-month contract/project-based Data Entry & Vehicle Description Specialist role, including custom GPT-assisted drafting, proofreading, style-guide compliance, discrepancy checking, progress and issue tracking, daily targets, and the qualified typical output of around 20 descriptions per day depending on workload.
-- Include a separate remote/project-based Blog Uploading & Website Content Support entry with dates omitted, describing WordPress and DealerOn uploads, file organization, material checks, and inconsistency flagging without linking or identifying client material.
-- Include education and hospitality training, keeping the 600-hour Front Office hotel internship within the Bachelor’s degree in Hospitality Management separate from paid work. Include support during a high-volume checkout period of approximately 300 guests, check-ins, and guest concerns.
+## Done — Experience, training, and project evidence
+- Include the seven-month contract/project-based Data Entry & Vehicle Description Specialist role, including custom GPT-assisted drafting, proofreading, style-guide compliance, discrepancy checking, progress/issues/daily-target tracking, and a qualified typical output of around 20 descriptions per day depending on workload.
+- Include the separate remote/project-based Blog Uploading & Website Content Support role with dates omitted, describing WordPress and DealerOn uploads, file organization, checks, and inconsistency flagging without client-identifying details.
+- Include the Bachelor’s degree in Hospitality Management and the 600-hour Front Office hotel internship as training, separate from paid work. Mention the high-volume period of approximately 300 guests, check-ins, and guest concerns.
+- Feature self-directed Gmail organization, calendar management for a property manager, and spreadsheet follow-up tracking; do not present these as paid client projects. Keep the inbox result precise: 2,677 unread and 2,738 inbox emails reduced to zero, with 19 color-coded labels.
+- Use the four real Drive screenshots as before/after samples with clear labels and full-size links. Keep them redacted: hide email sender/subject/snippet text, the email-after account-activity/location footer, calendar event details, both time axes, and calendar time-zone sidebar details. Preserve the interface, inbox counts, event blocks, and before/after structure. The user approved these redactions.
 
-## Done — Practice portfolio projects and images
-- Include a portfolio projects section clearly labeled as self-directed practice rather than paid client work, featuring Gmail inbox organization, calendar management for a property manager, and spreadsheet follow-up tracking.
-- Present the supplied email-management project figures—2,677 unread emails and 2,738 inbox emails reduced to zero, with 19 color-coded labels—and explicitly identify the work as self-directed practice.
-- Use the four real screenshots from the supplied Drive archive for the email-management and calendar-management self-directed projects, with clear before/after labels and a way to view each full-size image.
-- Redact sender, subject, and snippet text in the email-before screenshot; redact the account-activity/location footer in the email-after screenshot; and redact event details, both calendar time axes, and time-zone sidebar information in the calendar screenshots. Keep the application interface, inbox counts, event blocks, and before/after structure visible. These redactions were made with the user’s approval.
+## Done — GitHub transfer and live site
+- Create the user-site repository `cheyennedominguez.github.io`, transfer the current source without replacing Manus `origin`, and keep the four redacted screenshots under `client/public/images/` with repository-local paths.
+- Replace the starter README with build and Pages instructions. Use the GitHub Actions workflow to build `dist/public/` and deploy the user site.
+- The user approved making the repository public and publishing the site. The source is at https://github.com/cheyennedominguez/cheyennedominguez.github.io and the site is live at https://cheyennedominguez.github.io.
+- A profile photo is optional; the current design uses initials.
 
-## Done — Contact and external profiles
-- Provide an accessible contact section with direct links to cheyennemaegan@gmail.com, LinkedIn (https://www.linkedin.com/in/yen-dominguez), and GitHub (https://github.com/cheyennedominguez); make email and LinkedIn especially easy to reach. Do not add a contact form.
-
-## Done — Private GitHub repository transfer
-- Create the personal-site repository `cheyennedominguez.github.io` and transfer the current source to it without replacing Manus `origin`. The private repository is at https://github.com/cheyennedominguez/cheyennedominguez.github.io; `github` is a separate remote and `main` has the portfolio source.
-- Include the four user-approved redacted project screenshots under `client/public/images/` and use repository-local `/images/` paths instead of Manus-only `/manus-storage/` paths.
-- Replace the generic starter README with concise build, image-handling, and GitHub Pages instructions. Add a GitHub Actions workflow at `.github/workflows/pages.yml` that builds `dist/public/` and can be manually run after GitHub Pages is enabled.
-- The current design uses the “CD” initials mark; a profile portrait is optional.
-
-## Paused — GitHub Pages publication (per user decision)
-- The target address is `https://cheyennedominguez.github.io`, but the user chose: “keep the repository private and do not publish yet.” Leave repository visibility unchanged, do not enable Pages, and do not run the deployment workflow unless the user later requests publication.
-- GitHub did not expose the account plan to the CLI. GitHub Free requires a public source repository for Pages; some paid plans support a private source repository while the published site remains public. The user has not authorized exposing the repository source.
+## Open — Project-card thumbnails
+- Create one matching thumbnail for each self-directed project card: email inbox organization, calendar management, and spreadsheet follow-up, using the portfolio’s warm-brown/neutral style.
+- Make the artwork illustrative rather than depicting fake app screenshots or replacing real work evidence. Keep the redacted before/after images as the authentic samples. Add each thumbnail to its matching card with responsive sizing and meaningful accessibility text.
+- Build, check, push the updated source to both Manus `origin/main` and GitHub `main`, and run the GitHub Pages workflow so the published site includes the new thumbnails.
 
 ## Verification evidence
-- `pnpm check` and `pnpm build:static` passed after the repo-local screenshot migration and again before the final push. Each screenshot PNG is copied unchanged into `dist/public/images/`; the page uses `/images/` paths.
-- All four PNGs returned HTTP 200 from the preview. The live preview and built route manifest match the declared `/` route.
-- Desktop (1280×900) and phone (390×844) full-page screenshots were reviewed; both before/after pairs appear in their matching projects and stack cleanly on mobile.
-- Commit `712d760` is pushed to Manus `origin/main` and GitHub `main`. The working tree was clean after the push. The GitHub source repository remains private, and no public Pages deployment has been triggered.
+- `pnpm check` and `pnpm build:static` passed after the repository-local screenshot migration. All four screenshots are copied unchanged into `dist/public/images/` and referenced through `/images/` paths.
+- The public site returned HTTP 200 for `/`, `/manus-routes.json`, and all four screenshot images. The route manifest declares `/`.
+- Desktop and mobile full-page screenshots were reviewed; before/after samples are in their matching project sections and stack on mobile.
+- Commit `c988ba4` is on Manus `origin/main` and GitHub `main`. GitHub Actions run `39563640574` completed successfully; the public site is live.
