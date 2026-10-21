@@ -1,7 +1,7 @@
 # TODO
 
 ## Done — Public portfolio layout, identity, and access
-- Create a public, responsive, accessible portfolio for Cheyenne Dominguez, using the brewed-ops portfolio template as a visual and structural reference while replacing its developer-focused content with an honest administrative-support narrative.
+- Create a public-ready, responsive, accessible portfolio for Cheyenne Dominguez, using the brewed-ops portfolio template as a visual and structural reference while replacing its developer-focused content with an honest administrative-support narrative.
 - Follow the brewed-ops reference strictly for visual style and motion patterns, adapting its desktop rail, bento cards, mobile navigation, and restrained spring/reveal transitions to Cheyenne’s content. Change the color accents to brown while retaining warm neutral backgrounds and a simple “CD” initials mark. Keep contract/project-based work, hospitality training, and self-directed practice projects clearly distinct.
 - Include a hero section with the headline “Remote Administrative Assistant,” a concise honest introduction, a simple CD initials mark, and prominent email and LinkedIn contact links.
 - Present skills and focus areas prioritizing data entry, administrative support, and blog/content support without inventing credentials, outcomes, dates, or availability.
@@ -21,8 +21,15 @@
 ## Done — Contact and external profiles
 - Provide an accessible contact section with direct links to cheyennemaegan@gmail.com, LinkedIn (https://www.linkedin.com/in/yen-dominguez), and GitHub (https://github.com/cheyennedominguez); make email and LinkedIn especially easy to reach. Do not add a contact form.
 
+## Open — GitHub transfer and user-site setup
+- Create the personal-site repository `cheyennedominguez.github.io` and transfer the current site source to it without replacing the Manus `origin` remote.
+- Include the four user-approved redacted project screenshots in the repository and use repository-local asset paths instead of Manus-only `/manus-storage/` paths, so both the Manus Preview and GitHub Pages can load them.
+- Replace the generic starter README with concise local build and GitHub Pages instructions. Prepare a GitHub Actions static build/deploy workflow for `https://cheyennedominguez.github.io` using `pnpm build:static` and `dist/public`.
+- Keep the GitHub repository private unless/until the user confirms a public-repository visibility change if required by their GitHub plan. Do not expose the repository source or publish the Pages site before that confirmation.
+- Tell the user which image assets are already included and list any optional file they may add, such as a profile portrait; the current design uses initials and does not require a profile photo.
+
 ## Verification evidence
 - `pnpm check` and `pnpm build:static` passed after adding the image galleries.
 - Desktop (1280×900) and phone (390×844) full-page screenshots were reviewed; both image pairs render in the correct project sections, use clear before/after captions, and stack cleanly on mobile.
-- The live preview previously returned HTTP 200 for `/` and `/manus-routes.json`; the manifest is valid JSON and declares `/`. The image elements use the returned stable `/manus-storage/` project paths.
-- The brown palette and brown monogram/share metadata were retained. The site remains unpublished, as requested earlier.
+- The live preview and built route manifest match the declared `/` route. The four image elements currently use stable project-storage paths; these remain to be switched to local repository paths for GitHub Pages.
+- The brown palette and brown monogram/share metadata were retained. The Manus-hosted site remains unpublished; the user has now requested a GitHub Pages user site, subject to the repository-visibility gate above.
